@@ -111,7 +111,7 @@ class TestList:
     def test_list_json(self):
         data = invoke_json("list")
         assert isinstance(data, list)
-        assert len(data) >= 100  # 104 tools in registry
+        assert len(data) >= 100  # 105 tools in registry
         # Every tool has required fields
         for t in data:
             assert "name" in t

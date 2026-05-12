@@ -2891,6 +2891,60 @@
     }
   },
   {
+    "name": "browsertrace",
+    "version": "0.1.17",
+    "description": "Local trace viewer for debugging AI browser-agent failures.",
+    "author": "Aaron Lab",
+    "homepage": "https://aaronlab.github.io/browsertrace/",
+    "repository": "https://github.com/aaronlab/browsertrace",
+    "license": "MIT",
+    "categories": [
+      "python",
+      "dev-tools",
+      "monitoring"
+    ],
+    "tags": [
+      "ai-agents",
+      "browser-automation",
+      "debugging",
+      "tracing",
+      "playwright"
+    ],
+    "install": {
+      "method": "pip",
+      "package": "browsertrace[ui]",
+      "binary_name": "browsertrace"
+    },
+    "permissions": [
+      "local-read",
+      "local-write"
+    ],
+    "agent_hints": {
+      "when_to_use": "Debug failed AI browser-agent or Playwright + LLM runs by inspecting local traces, screenshots, model I/O, and public-safe exports",
+      "example_usage": [
+        "browsertrace doctor",
+        "browsertrace demo",
+        "browsertrace list --status failed --json",
+        "browsertrace show <run_id> --json"
+      ],
+      "input_formats": [
+        "sqlite",
+        "json"
+      ],
+      "output_formats": [
+        "text",
+        "json",
+        "html"
+      ]
+    },
+    "verified": true,
+    "source": {
+      "github": "https://github.com/aaronlab/browsertrace",
+      "github_stars_url": "https://api.github.com/repos/aaronlab/browsertrace",
+      "github_issues_url": "https://github.com/aaronlab/browsertrace/issues"
+    }
+  },
+  {
     "name": "prettier",
     "version": "3.4.2",
     "description": "Opinionated code formatter for JS, TS, CSS, HTML, JSON, Markdown, and more.",

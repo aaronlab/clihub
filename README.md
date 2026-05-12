@@ -53,7 +53,7 @@ pip install clihub-ai
 **For humans** — search, install, use:
 
 ```bash
-clihub search "resize images"      # 🔍 fuzzy search across 104 tools
+clihub search "resize images"      # 🔍 fuzzy search across 105 tools
 clihub install imagemagick          # 📦 auto-detects brew/pip/npm/cargo
 clihub info jq                      # 📖 metadata, examples, and --help output
 clihub list                         # 📋 browse all categories
@@ -122,7 +122,7 @@ clihub doctor --json | jq '[.[] | select(.ok == false) | .check]'
 
 | Command | What it Does |
 |---|---|
-| `clihub list [--json]` | 📋 Browse the full tool catalog (104 tools with metadata) |
+| `clihub list [--json]` | 📋 Browse the full tool catalog (105 tools with metadata) |
 | `clihub search <query> [--json]` | 🔍 Fuzzy-search tools by keyword |
 | `clihub install <tool> [--json]` | 📦 Install via auto-detected package manager |
 | `clihub info <tool> [--json]` | 📖 Show metadata, agent hints, and `--help` output |
@@ -134,7 +134,7 @@ clihub doctor --json | jq '[.[] | select(.ok == false) | .check]'
 
 ## 📦 Tool Catalog
 
-**104 tools** across 17 categories — every one has `agent_hints` with natural-language descriptions and example commands.
+**105 tools** across 17 categories — every one has `agent_hints` with natural-language descriptions and example commands.
 
 | Category | Tools | Use Case |
 |---|---|---|
